@@ -1,0 +1,282 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#clear-fix {
+  float: none;
+  clear: both;
+}
+
+body {
+  background: url("../img/hojas.jpg");
+  background-attachment: fixed;
+}
+
+#global {
+  width: 65%;
+  margin: 0px auto;
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+}
+
+#logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 4px;
+  line-height: 80px;
+  background: #235e3d;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 385px;
+  float: left;
+}
+
+#menu {
+  font-family: Helvetica, Arial;
+  background: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly ;
+}
+
+#menu ul {
+  line-height: 46px;
+  list-style: none;
+}
+
+#menu ul li {
+  height: 46px;
+  display: inline-block;
+  transition: all 300ms;
+}
+
+#menu ul li:hover {
+  background: #235e3d;
+}
+
+#menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#slide {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#posts {
+  padding: 6px;
+  width: 60%;
+  float: left;
+  font-family: Helvetica, Arial;
+}
+
+.post h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #333;
+}
+
+.post .date {
+  display: block;
+  color: gray;
+  margin-top: 5px;
+}
+
+.post p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  line-height: 18px;
+  text-align: justify;
+}
+
+.button-more {
+  display: block;
+  background: #235e3d;
+  text-align: center;
+  width: 90px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: all 200ms;
+}
+
+.button-more:hover {
+  background: #333;
+}
+
+#sidebar {
+  font-family: Helvetica, Arial;
+  width: 30%;
+  float: right;
+}
+
+#sidebar h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 10px;
+  background: url("/img/lines.png") repeat-x;
+}
+
+#sidebar h4 span {
+  background: white;
+}
+
+#sidebar img {
+  width: 100%;
+}
+
+#sidebar p {
+  font-family: Helvetica, Arial;
+  text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  padding: 5px;
+  border-radius: 2px;
+  border: solid 1px #ccc;
+  width: 80%;
+  box-shadow: 0px 0px 2px gray;
+  margin-bottom: 10px;
+}
+
+form button[type="button"] {
+  background: #eee;
+  border-radius: 2px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: all 100ms;
+  font-weight: bold;
+}
+
+form button[type="button"]:hover {
+  background: rgb(170, 170, 170);
+  cursor: pointer;
+}
+
+footer {
+  font-family: Helvetica, Arial;
+  color: white;
+  height: 47px;
+  background: rgba(51, 51, 51, 0.7);
+  margin: 0px auto;
+  width: 65%;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 47px;
+}
+
+#change-theme {
+  position: fixed;
+  top: 40%;
+  left: 0px;
+  background: rgba(51, 51, 51, 0.6);
+  width: 50px;
+  height: 138px;
+}
+
+#to-green,
+#to-red,
+#to-blue {
+  width: 36px;
+  height: 36px;
+  margin: 0px auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#to-green {
+  background: #235e3d;
+}
+#to-red {
+  background: #ca3413;
+}
+#to-blue {
+  background: #1f87c4;
+}
+
+.change-img {
+  width: 32px;
+  height: 32px;
+  margin: 2px 2px;
+}
+
+#scroll-top {
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 80%;
+  left: 79%;
+  border-radius: 3px;
+  background: #235e3d;
+  transition: all 100ms;
+}
+
+#scroll-top:hover {
+  cursor: pointer;
+  background: #333;
+}
+
+#upload {
+  width: 28px;
+  height: 28px;
+  margin: 4px 6px;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome p span{
+  font-weight: bolder;
+}
+
+#acor-container{
+  width: 60%;
+  float: left;
+  margin-top: 10px;
+}
+
+#acordeon{
+  float: left;
+  margin-top: 10px;
+}
+
+#acordeon h3{
+  background: #333 !important;
+  color: white !important;
+  border-color: #333 !important;
+  transition: all 100ms;
+}
+
+#acordeon h3:hover{
+  background: #235e3d !important;
+  border-color: #235e3d !important;
+}
+
+#box h2{
+  margin-top: 20px;
+  font-size: 30px;
+  color: #333;
+  font-family: Helvetica, Arial;
+  float: left;
+}
+

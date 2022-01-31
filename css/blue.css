@@ -1,0 +1,29 @@
+body {
+  background: url("../img/hojas.jpg");
+  background-attachment: fixed;
+}
+
+body {
+  background: url("../img/cielo.jpg");
+  background-attachment: fixed;
+}
+#logo {
+  background: #1f87c4;
+}
+
+#menu ul li:hover {
+  background: #1f87c4;
+}
+
+.button-more {
+  background: #1f87c4;
+}
+
+#scroll-top {
+  background: #1f87c4;
+}
+
+#acordeon h3:hover {
+  background: #1f87c4 !important;
+  border-color: #1f87c4 !important;
+}

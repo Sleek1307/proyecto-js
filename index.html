@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link id="style" rel="stylesheet" href="">
+    <!-- JQuery -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Slider -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script
+      src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Moment JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <title>Proyecto con JavaScript</title>
+  </head>
+
+  <body>
+    <!-- Change theme -->
+    <div id="change-theme">
+      <div id="to-green">
+        <img src="img/imagen.png" class="change-img">
+      </div>
+      <div id="to-blue">
+        <img src="img/imagen.png" class="change-img">
+      </div>
+      <div id="to-red">
+        <img src="img/imagen.png" class="change-img">
+      </div>
+    </div>
+
+    <!-- Scroll top -->
+    <div id="scroll-top">
+      <img src="img/upload.png" alt="" id="upload">
+    </div>
+
+    <!-- HEADER -->
+    <section id="global">
+      <header>
+        <div id="logo">
+          <h1>
+            PROYECTO JS
+          </h1>
+        </div>
+
+        <div id="clear-fix"></div>
+
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="index.html">
+                INICIO
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                RELOJ
+              </a>
+            </li>
+            <li>
+              <a href="about-me.html">
+                ACERCA DE MI
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                CONTACTO
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- SLIDER -->
+      <div id="slide">
+        <div class="bxslider">
+          <div><img src="img/hojas.jpg" title="Funky roots"></div>
+          <div><img src="img/rojo.jpg" title="The long and winding road"></div>
+          <div><img src="img/cielo.jpg" title="Happy trees"></div>
+        </div>
+      </div>
+      <hr style="width: 99%; margin: 0px auto;">
+
+      <!-- CONTENIDO -->
+      <section id="content">
+        <div id="posts">
+        </div>
+
+        <aside id="sidebar">
+          <div id="about">
+            <h4>
+              <span>
+                ¿Quien Soy?
+              </span>
+            </h4>
+            <img src="/img/caracol.jpg">
+
+            <p id="p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+              nobis adipisci consequuntur perspiciatis iure obcaecati veniam
+              eaque! Recusandae tempore cum officiis magni eveniet porro quod
+              itaque modi sapiente. Cupiditate, odio!
+            </p>
+
+            <div id="login">
+
+              <h4>
+                <span>
+                  Identificate
+                </span>
+              </h4>
+
+              <form id="form-control">
+                <label for="nombre">
+                  Nombre:
+                </label>
+                <input type="text" id="form-name">
+
+                <br>
+                <label for="email">
+                  E-mail:
+                </label>
+                <input type="email" id="email">
+
+                <br>
+                <label for="pass">
+                  Contraseña:
+                </label>
+                <input type="password" id="pass">
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </aside>
+        <div id="clear-fix"></div>
+
+      </section>
+    </section>
+
+    <footer>
+      Curso de JavaScript con Victor Robles &copy;
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
