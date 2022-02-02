@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,17 @@
         <!-- JQuery -->
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-        </script>
+            </script>
         <!-- JQueryUI -->
-        <script
-            src="jquery-ui-1.13.0/jquery-ui.js">
+        <script src="jquery-ui-1.13.0/jquery-ui.js">
         </script>
         <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.min.css">
-        <!-- About.js -->
-        <script
-            src="js/about.js">
+        <!-- form-contact.js -->
+        <script src="js/form-contact.js">
+    </script>
+        <!-- Jquery Form validator -->
+        <script src="js/jquery.form-validator.min.js">
+
         </script>
     </head>
 
@@ -80,61 +83,74 @@
             <!-- CONTENIDO -->
             <section id="content">
                 <div id="box">
-                    <!-- Acordeon -->
-                    <div id="acor-container">
-                        <h2>
-                            Sobre mi
-                        </h2>
-                        <div id="acordeon">
+                    <!-- FORMULARIO DE CONTACTO -->
+                    <div id="form-container">
+                        <h2>Formulario de contacto</h2>
+                        <form action="" method="post" id="form-contact">
 
-                            <h3>
-                                ¿Quienes somos?
-                            </h3>
                             <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Praesentium sint,
-                                    aspernatur
-                                    similique sed impedit consequuntur placeat
-                                    aliquid ipsam error mollitia blanditiis quia
-                                    ut
-                                    corrupti illo quod sequi, iure consectetur!
-                                    Saepe!
-                                </p>
+                                <label for="name">
+                                    Nombres:
+                                </label>
+                                <input type="text" name="name" data-validation=
+                                    'alphanumeric required'>
                             </div>
-                            <h3>
-                                Nuestros proyectos
-                            </h3>
+
+
                             <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Praesentium sint,
-                                    aspernatur
-                                    similique sed impedit consequuntur placeat
-                                    aliquid ipsam error mollitia blanditiis quia
-                                    ut
-                                    corrupti illo quod sequi, iure consectetur!
-                                    Saepe!
-                                </p>
+                                <label for="lastName">
+                                    Apellidos:
+                                </label>
+                                <input type="text" name="lastName"
+                                    data-validation=
+                                    'alphanumeric required'>
                             </div>
-                            <h3>
-                                Nuestros clientes
-                            </h3>
+
                             <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Praesentium sint,
-                                    aspernatur
-                                    similique sed impedit consequuntur placeat
-                                    aliquid ipsam error mollitia blanditiis quia
-                                    ut
-                                    corrupti illo quod sequi, iure consectetur!
-                                    Saepe!
-                                </p>
+                                <label for="email">
+                                    E-mail:
+                                </label>
+                                <input type="email" name="email"
+                                    data-validation=
+                                    'email required'>
                             </div>
-                        </div>
+
+                            <div>
+                                <label for="date">
+                                    Fecha de nacimiento:
+                                </label>
+                                <input type="text" name="date" data-validation=
+                                    'date' data-validation-format='dd-mm-yyyy'>
+                            </div>
+
+                            <div>
+                                <label for="age">
+                                    Edad:
+                                </label>
+                                <input type="number" name="age" data-validation=
+                                    'number required'>
+                            </div>
+
+                            <div>
+                                <label for="gender">Genero</label>
+                                <select name="gender"
+                                    data-validation="required">
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="query">
+                                    Solicitud:
+                                </label>
+                                <textarea name="query" id="" cols="30"
+                                    rows="10" data-validation="required"></textarea>
+                            </div>
+
+                            <input type="submit" value="Enviar">
+                        </form>
                     </div>
-
                 </div>
 
                 <aside id="sidebar">

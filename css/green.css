@@ -26,4 +26,9 @@ body{
 #acordeon h3:hover {
     background: #235E3D!important;
     border-color: #235E3D !important;
-  }
+}
+
+#reloj{
+    background: #235e3d;
+}
+
